@@ -1,0 +1,203 @@
+/* ==== Google Fonts ==== */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&family=Roboto:wght@300;400;500;700&display=swap");
+
+/* ====== Common Design Start ====== */
+:root {
+  --white: #fff;
+  --green: #0d9276;
+  --blue: #0766ad;
+  --red: #d04848;
+  --orange: #ffa447;
+  --black: #000;
+  --textColor: #222;
+  --roboto: "'Roboto', sans-serif";
+  --nunito: "'Nunito Sans', sans-serif";
+  --encodeSans: "'Encode Sans', sans-serif";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 0.8;
+}
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+.common_btn {
+  outline: none;
+  border: 1px solid transparent;
+  color: var(--white);
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all linear 0.3s;
+  font-family: var(--roboto);
+}
+/* ====== Common Design End ====== */
+.main_notes {
+  padding: 100px 0px;
+}
+.notes_wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.notes_input {
+  width: 550px;
+  height: 615px;
+  padding: 50px 15px;
+}
+.heading {
+  padding-bottom: 35px;
+  text-align: center;
+}
+.input_fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.text_input {
+  height: 300px;
+  padding: 15px;
+  color: var(--textColor);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 135%;
+  font-family: var(--roboto);
+}
+.add_btn {
+  background-color: var(--green);
+}
+.add_btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--green);
+  color: var(--textColor);
+}
+.show_output {
+  width: 550px;
+  height: 615px;
+  padding: 50px 15px;
+}
+.text_formatting {
+  display: flex;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 10px;
+  padding-bottom: 15px;
+}
+.text_format {
+  height: 25px;
+  width: 25px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-family: var(--encodeSans);
+  cursor: pointer;
+}
+.bold {
+  background-color: var(--textColor);
+  color: var(--white);
+  font-weight: 700;
+}
+.regular {
+  background-color: #f0f0f0;
+  color: var(--textColor);
+  font-weight: 400;
+}
+.italic {
+  background-color: gray;
+  color: #fff;
+  font-style: italic;
+}
+.normal {
+  background-color: #fdf4f4;
+  color: var(--textColor);
+  font-style: normal;
+}
+.output_color {
+  display: flex;
+  gap: 12px;
+}
+.output {
+  width: 90%;
+  height: 260px;
+  border: 1px solid gray;
+  overflow: scroll;
+  padding: 10px;
+  color: var(--textColor);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 135%;
+  font-family: var(--nunito);
+}
+.example::-webkit-scrollbar {
+  display: none;
+}
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.colors {
+  width: 10%;
+  height: 250px;
+}
+.text_color {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.red {
+  background-color: var(--red);
+}
+.green {
+  background-color: var(--green);
+}
+.blue {
+  background-color: var(--blue);
+}
+.black {
+  background-color: var(--black);
+}
+.output_btn {
+  padding-top: 20px;
+  display: flex;
+  gap: 50px;
+}
+.update_btn {
+  background: var(--orange);
+  width: 38%;
+}
+.update_btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  color: var(--textColor);
+}
+.delete_btn {
+  background: var(--red);
+  width: 38%;
+}
+.delete_btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--red);
+  color: var(--textColor);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>NoteApp | Note Taking Application</title>
+    <!-- ==== Custom CSS File ==== -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- ===== Main Notes Start ===== -->
+    <section class="main_notes">
+      <div class="container">
+        <div class="notes_wrapper">
+          <div class="notes_input">
+            <h1 class="heading">Note Application</h1>
+            <div class="input_fields">
+              <textarea
+                class="text_input"
+                placeholder="Enter Your Notes"
+              ></textarea>
+              <button class="add_btn common_btn">Save Note</button>
+            </div>
+          </div>
+          <div class="show_output">
+            <h1 class="heading">Saved Notes</h1>
+            <div class="text_formatting">
+              <button class="bold text_format"><b>B</b></button>
+              <button class="regular text_format">R</button>
+              <button class="italic text_format">I</button>
+              <button class="normal text_format">N</button>
+            </div>
+            <div class="output_color">
+              <div class="output example"></div>
+              <div class="colors">
+                <button class="text_color red"></button>
+                <button class="text_color green"></button>
+                <button class="text_color blue"></button>
+                <button class="text_color black"></button>
+              </div>
+            </div>
+            <div class="output_btn">
+              <button class="common_btn update_btn">Update</button>
+              <button class="common_btn delete_btn">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Main Notes End ===== -->
+
+    <!-- ===== JS File ===== -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
