@@ -13,6 +13,7 @@ const black = document.querySelector(".black");
 const italic = document.querySelector(".italic");
 const normal = document.querySelector(".normal");
 const mark = document.querySelector(".mark");
+const download = document.querySelector(".download");
 
 add_btn.addEventListener("click", () => {
   let text = text_input.value;
@@ -103,4 +104,14 @@ const textSelection = () => {
 
 mark.addEventListener("click", () => {
   textSelection();
+});
+
+// file download feature
+download.addEventListener("click", () => {
+  let link = document.createElement("a");
+  link.download = "myNote.txt";
+  let blob = new Blob([output.innerText], { type: "text/plain" });
+  link.href = URL.createObjectURL(blob);
+  link.click();
+  URL.revokeObjectURL(link.href);
 });

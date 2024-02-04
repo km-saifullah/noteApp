@@ -135,6 +135,10 @@ p {
   background-color: #8cff32;
   color: var(--textColor);
 }
+.download{
+  background-color: blueviolet;
+  color: var(--white);
+}
 .output_color {
   display: flex;
   gap: 12px;
