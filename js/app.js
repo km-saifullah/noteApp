@@ -108,10 +108,14 @@ mark.addEventListener("click", () => {
 
 // file download feature
 download.addEventListener("click", () => {
-  let link = document.createElement("a");
-  link.download = "myNote.txt";
-  let blob = new Blob([output.innerText], { type: "text/plain" });
-  link.href = URL.createObjectURL(blob);
-  link.click();
-  URL.revokeObjectURL(link.href);
+  if (output.textContent == "") {
+    alert("You did not write any text yet!");
+  } else {
+    let link = document.createElement("a");
+    link.download = "myNote.txt";
+    let blob = new Blob([output.innerText], { type: "text/plain" });
+    link.href = URL.createObjectURL(blob);
+    link.click();
+    URL.revokeObjectURL(link.href);
+  }
 });

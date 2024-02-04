@@ -53,6 +53,9 @@ p {
 /* ====== Common Design End ====== */
 .main_notes {
   padding: 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .notes_wrapper {
   display: flex;
@@ -135,7 +138,7 @@ p {
   background-color: #8cff32;
   color: var(--textColor);
 }
-.download{
+.download {
   background-color: blueviolet;
   color: var(--white);
 }
