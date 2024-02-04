@@ -12,6 +12,7 @@ const blue = document.querySelector(".blue");
 const black = document.querySelector(".black");
 const italic = document.querySelector(".italic");
 const normal = document.querySelector(".normal");
+const mark = document.querySelector(".mark");
 
 add_btn.addEventListener("click", () => {
   let text = text_input.value;
@@ -83,3 +84,23 @@ const changeTextColor = (element, value) => {
 const changeFontStyle = (element, style) => {
   element.style.fontStyle = style;
 };
+
+// text highlighting feature
+const textSelection = () => {
+  let selection = window.getSelection();
+  let selectedText = selection.toString();
+
+  if (selectedText !== "") {
+    let range = selection.getRangeAt(0);
+    let span = document.createElement("span");
+    span.style.backgroundColor = "#8cff32";
+    span.style.color = "#222";
+    span.style.textDecoration = "underline";
+    range.surroundContents(span);
+    selection.removeAllRanges();
+  }
+};
+
+mark.addEventListener("click", () => {
+  textSelection();
+});

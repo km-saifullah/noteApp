@@ -131,6 +131,10 @@ p {
   color: var(--textColor);
   font-style: normal;
 }
+.mark {
+  background-color: #8cff32;
+  color: var(--textColor);
+}
 .output_color {
   display: flex;
   gap: 12px;
