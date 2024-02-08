@@ -15,10 +15,9 @@ To use the NoteApp:
 1. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/km-saifullah/noteApp.git
-   Open the index.html file in your preferred web browser.
    ```
-
-Start taking notes!
+2. Open the index.html file in your preferred web browser.
+3. Start taking notes!
 
 ## Features
 
